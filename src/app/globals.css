@@ -4,7 +4,7 @@
 
 @layer base{
     body{
-        @apply bg-neutral-50 text-neutral-secondary font-fredoka;
+        @apply text-neutral-secondary font-fredoka;
     }
     h1{
        @apply text-3xl font-semibold mb-4 text-neutral-primary;
@@ -27,6 +27,6 @@
     }
 
     .btn-hover{
-        @apply hover:bg-brand-primary-hover hover:text-text-onbrand-primary hover:transition hover:border-brand-primary
+        @apply hover:bg-brand-primary-hover hover:text-onbrand-primary hover:transition hover:border-brand-primary
     }
 }
