@@ -4,10 +4,16 @@ import { Nav } from '@/src/components/ui/Nav'
 import { ProgressIndicator } from '@/src/components/ui/ProgressIndicator'
 import { IngredientBox } from '@/src/components/ui/IngredientBox'
 import { ingredients } from '@/src/data'
+import { RadioButton } from '@/src/components/ui/RadioButton'
 
 const page = () => {
-  const [currentStep, setCurrentStep] = useState(1) // Starting from step 1
-  const totalSteps = 4
+  const [currentStep, setCurrentStep] = useState(1) // ProgressIndicator
+  const [selectedCheese, setSelectedCheese] = useState('None')
+  const totalSteps = 4 // ProgressIndicator
+
+  const handleCheeseChange = (value) => {
+    setSelectedCheese(value)
+  }
 
   return (
     <>
@@ -41,7 +47,31 @@ const page = () => {
 
           <div>
             <h3 className='mb-3.5'>Select Cheese</h3>
-            <div className='flex flex-wrap gap-3'></div>
+            <form className='flex gap-2'>
+              <RadioButton label='None' value='None' selectedValue={selectedCheese} onChange={handleCheeseChange} />
+              <RadioButton label='Normal' value='Normal' selectedValue={selectedCheese} onChange={handleCheeseChange} />
+              <RadioButton
+                label='Extra Cheese'
+                value='Extra'
+                selectedValue={selectedCheese}
+                onChange={handleCheeseChange}
+              />
+            </form>
+          </div>
+
+          <div className='m-2 flex justify-center gap-2 pb-5'>
+            <button
+              onClick={() => setCurrentStep((prev) => Math.max(prev - 1, 1))}
+              className='btn btn-secondary btn-hover w-[167px] px-11 py-1 text-lg'
+            >
+              Previous
+            </button>
+            <button
+              onClick={() => setCurrentStep((prev) => Math.min(prev + 1, totalSteps))}
+              className='btn btn-primary btn-hover w-[167px] py-1 text-lg'
+            >
+              Next
+            </button>
           </div>
         </div>
       </div>
