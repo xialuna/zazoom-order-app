@@ -6,6 +6,7 @@ import { IngredientBox } from '@/src/components/ui/IngredientBox'
 import { ingredients } from '@/src/data'
 import Link from 'next/link'
 import { InputField } from '@/src/components/ui/InputField'
+import { TextField } from '@/src/components/ui/TextField'
 const page = () => {
   const [currentStep, setCurrentStep] = useState(1) // ProgressIndicator
   const [name, setName] = useState('') // State to hold input value
@@ -48,22 +49,25 @@ const page = () => {
             onChange={handleContactChange}
             placeholderText='+63XXXXXXXXXX'
           />
-          <InputField
+
+          <TextField
             label='Delivery Address'
             value={address}
             onChange={handleAddressChange}
-            placeholderText='Unit No. Street, Brgy, City, Region'
+            placeholderText='Unit No. Street, Barangay, City, Region'
+            heightSize={50}
           />
-          <InputField
+
+          <TextField
             label='Special Instructions'
             value={instructions}
             onChange={handleInstructionsChange}
             placeholderText='Any instructions you would like to add (eg. food allergies, directions)'
-          
+            heightSize={97}
           />
         </form>
 
-        <div className='m-2 flex justify-center gap-2 pb-5'>
+        <div className='m-44 flex justify-center gap-2 pb-5'>
           <button
             onClick={() => setCurrentStep((prev) => Math.max(prev - 1, 1))}
             className='btn btn-secondary btn-hover w-[167px] px-11 py-1 text-lg'
