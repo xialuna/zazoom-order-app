@@ -60,12 +60,15 @@ const page = () => {
           </div>
 
           <div className='m-2 flex justify-center gap-2 pb-5'>
-            <button
-              onClick={() => setCurrentStep((prev) => Math.max(prev - 1, 1))}
-              className='btn btn-secondary btn-hover w-[167px] px-11 py-1 text-lg'
-            >
-              Previous
-            </button>
+            <Link href='/'>
+              <button
+                onClick={() => setCurrentStep((prev) => Math.max(prev - 1, 1))}
+                className='btn btn-secondary btn-hover w-[167px] px-11 py-1 text-lg'
+              >
+                Cancel
+              </button>
+            </Link>
+
             <Link href='/pick-toppings'>
               <button
                 onClick={() => setCurrentStep((prev) => Math.min(prev + 1, totalSteps))}

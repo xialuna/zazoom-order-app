@@ -11,7 +11,8 @@ export const TextField = ({ label, value, onChange, placeholderText, heightSize 
         value={value}
         onChange={onChange}
         placeholder={placeholderText}
-        className={`h-[${heightSize}px] w-full rounded-lg border-2 border-neutral-primary bg-neutral-primary p-1.5 text-sm text-neutral-secondary placeholder:text-neutral-secondary`}
+        style={{ height: `${heightSize}px` }}
+        className='h-[${heightSize}px] w-full rounded-lg border-2 border-neutral-primary bg-neutral-primary p-1.5 text-sm text-neutral-secondary placeholder:text-neutral-secondary'
       />
     </>
   )

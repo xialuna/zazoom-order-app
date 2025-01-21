@@ -63,23 +63,26 @@ const page = () => {
             value={instructions}
             onChange={handleInstructionsChange}
             placeholderText='Any instructions you would like to add (eg. food allergies, directions)'
-            heightSize={97}
+            heightSize='97'
           />
         </form>
 
-        <div className='m-44 flex justify-center gap-2 pb-5'>
-          <button
-            onClick={() => setCurrentStep((prev) => Math.max(prev - 1, 1))}
-            className='btn btn-secondary btn-hover w-[167px] px-11 py-1 text-lg'
-          >
-            Previous
-          </button>
+        <div className='absolute bottom-0 flex justify-center gap-2 pb-7'>
+          <Link href='/pick-toppings'>
+            <button
+              onClick={() => setCurrentStep((prev) => Math.max(prev - 1, 1))}
+              className='btn btn-secondary btn-hover w-[167px] px-11 py-1 text-lg'
+            >
+              Previous
+            </button>
+          </Link>
+
           <Link href='/customer-info'>
             <button
               onClick={() => setCurrentStep((prev) => Math.min(prev + 1, totalSteps))}
               className='btn btn-primary btn-hover w-[167px] py-1 text-lg'
             >
-              Next
+              Submit
             </button>
           </Link>
         </div>
