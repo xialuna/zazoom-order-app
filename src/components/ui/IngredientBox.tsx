@@ -9,17 +9,17 @@ export const IngredientBox = () => {
           <img src='assets/regular-dough.webp' className='w-[104px]'></img>
         </div>
 
-        <button className='bg-neutral-emphasis absolute right-0 top-0 rounded p-0.5'>
+        <button className='absolute right-0 top-0 rounded bg-neutral-emphasis p-0.5'>
           <Plus className='text-onbrand-primary' />
         </button>
       </div>
       {/* Title Card Container */}
       <div className='flex flex-col gap-1'>
-        <h3 className='pt-2 text-lg font-semibold'>Regular Dough</h3>
+        <h4 className='pt-2 text-lg font-semibold'>Regular Dough</h4>
 
         {/* Price */}
         <div className='flex justify-end'>
-          <div className='bg-neutral-emphasis flex items-center justify-end gap-1 rounded px-2 py-0.5 text-white'>
+          <div className='flex items-center justify-end gap-1 rounded bg-neutral-emphasis px-2 py-0.5 text-white'>
             <Plus size={15} className='border-medium' />
             <span className='text-sm font-medium'>₱150.00</span>
           </div>
