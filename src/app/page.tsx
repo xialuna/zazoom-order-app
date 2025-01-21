@@ -4,6 +4,8 @@ import { IngredientBox } from '../components/ui/IngredientBox'
 import { ProgressIndicator } from '../components/ui/ProgressIndicator'
 import { ShoppingCart } from 'lucide-react'
 import React, { useState } from 'react'
+import { ButtonCart } from '../components/ui/ButtonCart'
+import { FavoritePizza } from '../components/ui/FavoritePizza'
 export default function Home() {
   return (
     <div>
@@ -15,10 +17,7 @@ export default function Home() {
             <div className='max-w-[218px]'>
               <h3>Customize Pizza</h3>
               <p>Create your own yummy pizza with whatever dough, sauce, and toppings you want</p>
-              <button className='btn btn-primary btn-hover mt-2 flex gap-1 px-2 py-1 text-xs'>
-                <ShoppingCart size={15} />
-                Add to Cart
-              </button>
+              <ButtonCart />
             </div>
             <img src='assets/custom-pizza.png' className='w-[98px] rounded border-2 border-brand-primary' />
           </div>
@@ -37,6 +36,11 @@ export default function Home() {
         </div>
 
         {/* Pizza Components */}
+        <div className='mt-4 flex flex-col gap-3'>
+          <FavoritePizza />
+          <FavoritePizza />
+          <FavoritePizza />
+        </div>
       </main>
     </div>
   )
