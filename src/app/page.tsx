@@ -15,7 +15,7 @@ export default function Home() {
       <main className='mx-[18px]'>
         {/* Customize Pizza */}
         <div className='mt-5 flex flex-col items-center justify-center'>
-          <Link href='/custom-pizza/pick-base'>
+          <Link href='/pick-base'>
             <div className='flex max-w-[361px] items-center justify-center gap-3 rounded-lg border-2 border-neutral-primary bg-neutral-primary px-2 py-3'>
               <div className='max-w-[218px]'>
                 <h3>Customize Pizza</h3>

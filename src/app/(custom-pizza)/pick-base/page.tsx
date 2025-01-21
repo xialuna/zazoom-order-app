@@ -5,7 +5,7 @@ import { ProgressIndicator } from '@/src/components/ui/ProgressIndicator'
 import { IngredientBox } from '@/src/components/ui/IngredientBox'
 import { ingredients } from '@/src/data'
 import { RadioButton } from '@/src/components/ui/RadioButton'
-
+import Link from 'next/link'
 const page = () => {
   const [currentStep, setCurrentStep] = useState(1) // ProgressIndicator
   const [selectedCheese, setSelectedCheese] = useState('None')
@@ -66,12 +66,14 @@ const page = () => {
             >
               Previous
             </button>
-            <button
-              onClick={() => setCurrentStep((prev) => Math.min(prev + 1, totalSteps))}
-              className='btn btn-primary btn-hover w-[167px] py-1 text-lg'
-            >
-              Next
-            </button>
+            <Link href='/pick-toppings'>
+              <button
+                onClick={() => setCurrentStep((prev) => Math.min(prev + 1, totalSteps))}
+                className='btn btn-primary btn-hover w-[167px] py-1 text-lg'
+              >
+                Next
+              </button>
+            </Link>
           </div>
         </div>
       </div>

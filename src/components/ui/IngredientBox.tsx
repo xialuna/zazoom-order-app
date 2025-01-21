@@ -6,7 +6,7 @@ export const IngredientBox = ({ imageSrc, pizzaName, price }) => {
       {/* Image Container */}
       <div className='relative'>
         <div className='flex items-center justify-center rounded-lg bg-neutral-primary px-2 py-3'>
-          <img src={imageSrc} className='w-[104px]'></img>
+          <img src={imageSrc} className='w-[100px]'></img>
         </div>
 
         <button className='absolute right-0 top-0 rounded bg-neutral-emphasis p-0.5'>
@@ -19,7 +19,7 @@ export const IngredientBox = ({ imageSrc, pizzaName, price }) => {
 
         {/* Price */}
         <div className='flex justify-end'>
-          <div className='flex items-center justify-end rounded bg-neutral-emphasis px-2 py-0.5 text-white'>
+          <div className='flex items-center justify-end gap-1 rounded bg-neutral-emphasis px-2 py-0.5 text-white'>
             <Plus size={15} className='border-medium' />
             <span className='text-sm font-medium'>₱ {price}</span>
           </div>
