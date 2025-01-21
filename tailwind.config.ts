@@ -37,7 +37,7 @@ export default {
 				"brand-onprimary": globalColors.brand.dark,
 				"neutral-primary": globalColors.neutral[300],
 				"neutral-secondary": globalColors.neutral[200],
-				"neutreal-error": globalColors.error,
+				"neutral-error": globalColors.error,
 			},
 		},
 	},
