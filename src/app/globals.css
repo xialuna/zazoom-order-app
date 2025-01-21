@@ -4,16 +4,29 @@
 
 @layer base{
     body{
-        @apply bg-neutral-50 text-xs text-neutral-secondary;
+        @apply bg-neutral-50 text-neutral-secondary font-fredoka;
     }
     h1{
        @apply text-3xl font-semibold mb-4 text-neutral-primary;
     }
 
     h2{
-        @apply text-xl font-semibold text-neutral-primary;
+        @apply text-xl font-semibold text-neutral-primary ;
     }
 
+    .btn{
+        @apply rounded-md border-2 border-brand-primary font-semibold;
+    }
 
+    .btn-primary{
+        @apply text-neutral-primary bg-brand-primary;
+    }
 
+    .btn-secondary{
+        @apply bg-neutral-primary border-neutral-primary text-neutral-secondary;
+    }
+
+    .btn-hover{
+        @apply hover:bg-brand-primary-hover hover:text-text-onbrand-primary hover:transition hover:border-brand-primary
+    }
 }
