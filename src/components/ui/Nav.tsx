@@ -1,14 +1,13 @@
-"use client";
+'use client'
 import React from 'react'
-import { Menu} from 'lucide-react';
-
+import { Menu } from 'lucide-react'
 
 export const Nav = () => {
   return (
-    <nav className="bg-brand-primary p-3 flex justify-end items-end">
-        <button>
-            <Menu size={30}/>
-        </button>
+    <nav className='sticky top-0 flex items-end justify-end bg-brand-primary p-3'>
+      <button>
+        <Menu size={30} />
+      </button>
     </nav>
   )
 }
