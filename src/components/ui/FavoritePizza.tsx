@@ -1,7 +1,7 @@
 import React from 'react'
 import { ButtonCart } from './ButtonCart'
 
-export const FavoritePizza = ({ key, name, price, imageSrc, ingredients }) => {
+export const FavoritePizza = ({ name, price, imageSrc, ingredients }) => {
   return (
     <div className='flex flex-col items-center justify-center'>
       <div className='flex max-w-[361px] items-center justify-center gap-3 rounded-lg border-2 border-neutral-primary bg-neutral-primary px-2 py-1'>

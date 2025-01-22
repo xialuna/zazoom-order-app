@@ -7,13 +7,13 @@ import { ingredients } from '@/src/data'
 import Link from 'next/link'
 import { InputField } from '@/src/components/ui/InputField'
 import { TextField } from '@/src/components/ui/TextField'
+import { useProgress } from '@/src/context/ProgressContext'
 const page = () => {
-  const [currentStep, setCurrentStep] = useState(1) // ProgressIndicator
+  const { currentStep, setCurrentStep, totalSteps } = useProgress()
   const [name, setName] = useState('') // State to hold input value
   const [contact, setContact] = useState('')
   const [address, setAddress] = useState('')
   const [instructions, setInstructions] = useState('')
-  const totalSteps = 4 // ProgressIndicator
 
   const handleNameChange = (e) => {
     setName(e.target.value)

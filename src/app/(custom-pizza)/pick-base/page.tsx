@@ -6,10 +6,13 @@ import { IngredientBox } from '@/src/components/ui/IngredientBox'
 import { ingredients } from '@/src/data'
 import { RadioButton } from '@/src/components/ui/RadioButton'
 import Link from 'next/link'
+import { useProgress } from '@/src/context/ProgressContext'
+
 const page = () => {
-  const [currentStep, setCurrentStep] = useState(1) // ProgressIndicator
+  const { currentStep, setCurrentStep, totalSteps } = useProgress()
+  const [selectedIngredients, setSelectedIngredients] = useState([])
+  const [totalPrice, setTotalPrice] = useState(0)
   const [selectedCheese, setSelectedCheese] = useState('None')
-  const totalSteps = 4 // ProgressIndicator
 
   const handleCheeseChange = (value) => {
     setSelectedCheese(value)

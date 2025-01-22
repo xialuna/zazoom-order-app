@@ -5,10 +5,9 @@ import { ProgressIndicator } from '@/src/components/ui/ProgressIndicator'
 import { IngredientBox } from '@/src/components/ui/IngredientBox'
 import { ingredients } from '@/src/data'
 import Link from 'next/link'
+import { useProgress } from '@/src/context/ProgressContext'
 const page = () => {
-  const [currentStep, setCurrentStep] = useState(1) // ProgressIndicator
-
-  const totalSteps = 4 // ProgressIndicator
+  const { currentStep, setCurrentStep, totalSteps } = useProgress()
 
   return (
     <>
