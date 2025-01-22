@@ -77,7 +77,7 @@ const page = () => {
             </button>
           </Link>
 
-          <Link href='/customer-info'>
+          <Link href='/order-confirmed'>
             <button
               onClick={() => setCurrentStep((prev) => Math.min(prev + 1, totalSteps))}
               className='btn btn-primary btn-hover w-[167px] py-1 text-lg'
