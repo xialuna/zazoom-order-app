@@ -4,7 +4,7 @@
 
 @layer base{
     body{
-        @apply text-neutral-secondary font-fredoka;
+        @apply text-neutral-secondary font-fredoka max-w-[390px];
     }
     h1{
        @apply text-3xl font-semibold mb-4 text-neutral-primary;
