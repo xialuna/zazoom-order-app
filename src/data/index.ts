@@ -122,7 +122,7 @@ export const recipes = [
         {
             "id": 1,
             "pizzaName": "Cheese Pizza",
-            "price": 300.50,
+            "price": 480.50,
             "imageSrc": "/assets/cheese-pizza.webp",
             "ingredients": [
                 "Regular Dough, Tomato Sauce, Cheese"
@@ -131,7 +131,7 @@ export const recipes = [
         {
             "id": 2,
             "pizzaName": "Classic Meat",
-            "price": 400.25,
+            "price": 780.25,
             "imageSrc": "/assets/classic-meat.webp",
             "ingredients": [
                 "Cheese, Pepperoni, Sausage"
@@ -140,8 +140,8 @@ export const recipes = [
         {
             "id": 3,
             "pizzaName": "Fruity Fall",
-            "price": 360.75,
-            "imageSrc": "/assets/fruity-fall.webp",
+            "price": 890.75,
+            "imageSrc": "/assets/fruity-fall.png",
             "ingredients": [
                 "Olive, Eggplant, Pumpkin"
             ]
@@ -149,7 +149,7 @@ export const recipes = [
         {
             "id": 4,
             "pizzaName": "Fruity Pig",
-            "price": 360.25,
+            "price": 1099.15,
             "imageSrc": "/assets/fruity-pig.webp",
             "ingredients": [
                 "Pepperoni, Sausage, Olive, Bell Pepper, Bacon, Pineapple, Ham"
@@ -158,7 +158,7 @@ export const recipes = [
         {
             "id": 5,
             "pizzaName": "Meat Lovers",
-            "price": 440.30,
+            "price": 999.30,
             "imageSrc": "/assets/meat-lovers.webp",
             "ingredients": [
                 "Sausage, Bacon, Pepperoni, Ham"
@@ -176,7 +176,7 @@ export const recipes = [
         {
             "id": 7,
             "pizzaName": "Pepperoni Pizza",
-            "price": 400.50,
+            "price": 470.52,
             "imageSrc": "/assets/pepperoni-pizza.webp",
             "ingredients": [
                 "Tomato Sauce, Cheese, Pepperoni"
@@ -194,8 +194,8 @@ export const recipes = [
         {
             "id": 9,
             "pizzaName": "Vegan Pizza",
-            "price": 340.10,
-            "imageSrc": "/assets/vegan-pizza.webp",
+            "price": 1326.19,
+            "imageSrc": "/assets/vegan-pizza.png",
             "ingredients": [
                 "Mushroom, Olive, Onion, Bell Pepper, Pineapple, Basil, Eggplant"
             ]
@@ -203,10 +203,10 @@ export const recipes = [
         {
             "id": 10,
             "pizzaName": "Vegetarian Pizza",
-            "price": 360.80,
-            "imageSrc": "/assets/vegetarian-pizza.webp",
+            "price": 999.99,
+            "imageSrc": "/assets/vegetarian-pizza.png",
             "ingredients": [
-                "Cheese, Mushroom, Olive, Basil, Eggplant"
+                "Cheese, Mushroom, Olive, Basil, Eggplant, Onion, Bell Pepper, Pineapple"
             ]
         }
     ]

@@ -1,11 +1,10 @@
 'use client'
 import { Nav } from '../components/ui/Nav'
-import { IngredientBox } from '../components/ui/IngredientBox'
-import { ProgressIndicator } from '../components/ui/ProgressIndicator'
-import { ShoppingCart } from 'lucide-react'
 import React, { useState } from 'react'
 import { ButtonCart } from '../components/ui/ButtonCart'
 import { FavoritePizza } from '../components/ui/FavoritePizza'
+import { recipes } from '@/src/data'
+
 import Link from 'next/link'
 export default function Home() {
   return (
@@ -41,9 +40,15 @@ export default function Home() {
 
         {/* Pizza Components */}
         <div className='mt-4 flex flex-col gap-3'>
-          <FavoritePizza />
-          <FavoritePizza />
-          <FavoritePizza />
+          {recipes.map((recipe) => (
+            <FavoritePizza
+              key={recipe.id}
+              name={recipe.pizzaName}
+              price={recipe.price}
+              imageSrc={recipe.imageSrc}
+              ingredients={recipe.ingredients}
+            />
+          ))}
         </div>
       </main>
     </div>
