@@ -1,5 +1,19 @@
 # Zazoom Order App
-Inspired from the game **Good Pizza, Great Pizza*. This is an extension of the zazzoom app from the client's perspective and lets you pick your favorite ingredients and have it delivered right to your door.
+## Overview
+Inspired from the game **Good Pizza, Great Pizza**. Here customers can order online through the Zazoom app. However, as a player, we can only see the restaurant’s side of the app. That’s why, I created a client-side interface to allow users to customize &  place their orders easily.
+
+<p align="center">
+<img src="https://github.com/user-attachments/assets/a8ba1455-c67f-4e24-83cd-da9bc4018dff" style="width:50%;" /> 
+</p>
+
+## Current Order App
+This is an extension of the zazoom app from the client's perspective and lets you pick your favorite ingredients and have it delivered right to your door.
+
+<p align="center">
+<img src="https://github.com/user-attachments/assets/413109f8-6f77-4f1a-a262-02599e7a70e2" style="width:100%;" /> 
+</p>
+
+
 
 ## Features
 
